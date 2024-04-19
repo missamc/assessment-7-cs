@@ -143,6 +143,7 @@ addToZero(numsArray);
 //     }
 // }
 
+//NEW
 
 let strArr = string.toLowerCase();
 let alphabet = 'a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z'.split('');
@@ -162,7 +163,7 @@ function isPangram(string){
 console.log(isPangram)
 
 
-I believe the runtime for this code would be O(n2)
+// I believe the runtime for this code would be O(n log n)
 
 
 
@@ -182,6 +183,21 @@ function findLongestWord(str){
 
 findLongestWord(wordsArr)
 
-//I beleive the runtim for this code would be O(n2)
+//I beleive the runtime for this code would be O(log n)
 
 
+let singleWordStr = 'Monday'
+
+
+
+function hasUniqueChars(string){
+    for( let i = 0; i < string.length; i++ ) {
+        if( string.indexOf(string[i]) !== i){
+            return false
+        }
+        return true
+    }
+}
+console.log(hasUniqueChars(singleWordStr))
+
+//I believe the runtime for this code would be O(n2)
